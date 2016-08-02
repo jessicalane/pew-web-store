@@ -3,6 +3,10 @@ ul {
 	display: flex;
 }
 
+nav li {
+	display: inline-block;
+}
+
 ul li {
 	margin: 10px;
 }
