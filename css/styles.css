@@ -1,19 +1,20 @@
-ul {
+
+/*Header/Navigation */
+
+nav ul {
 	list-style: none;
 	display: flex;
+}
+
+nav li table {
+	display: inline;
 }
 
 nav li {
 	display: inline-block;
 }
 
-ul li {
-	margin: 10px;
-}
-
-.section {
-	margin: 50px;
-}
+/*Body */
 
 body {
 	margin-top: 70px;
