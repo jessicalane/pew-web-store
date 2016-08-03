@@ -12,6 +12,7 @@ nav li table {
 
 nav li {
 	display: inline-block;
+	margin-top: 2em;
 }
 
 /*Body */
