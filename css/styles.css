@@ -20,3 +20,7 @@ nav li {
 body {
 	margin-top: 70px;
 }
+
+.tabs {
+	text-align: left;
+}
