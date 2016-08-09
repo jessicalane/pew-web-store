@@ -61,9 +61,8 @@ nav ul li {
 }
 
 .navbar {
-	background-color: #fff;
+	background: rgba(255,255,255,0.9);
 	border-bottom: 0px;
-	margin: 10px 15px 0px 10px;
 }
 
 .caret-up {
@@ -78,10 +77,31 @@ nav ul li {
     vertical-align: middle;
 }
 
+.container {
+    background: transparent;
+}
+
+#logo {
+    max-width: 50px;
+    height: auto;
+    margin: 5px;
+}
+
 /*Carousel*/
+
+#owl-car {
+    max-width: 900px;
+    margin: auto;
+}
 
 #owl-car .item img {
     display: block;
     width: 100%;
     height: auto;
+    margin: auto;
+}
+
+#carousel {
+    margin-top: 90px;
+    text-align: center;
 }
