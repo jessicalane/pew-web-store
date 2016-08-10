@@ -10,10 +10,6 @@ $(document).ready(function() {
 		$(document).on('scroll', function() {
 			$('.collapse').collapse('hide');
 		});
-	};
-
-	if ($(window).width < 1000) {
-			console.log("yay!")
 	}
 
 });
