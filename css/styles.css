@@ -105,3 +105,12 @@ nav ul li {
     margin-top: 90px;
     text-align: center;
 }
+
+/*Featured Items*/
+
+.featureditem img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
+}

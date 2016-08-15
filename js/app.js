@@ -12,4 +12,17 @@ $(document).ready(function() {
 		});
 	}
 
+	mobileNav();
+
+//Testing screen size
+	function screenSize() {
+		if ($(document).width() <= 1000) {
+			console.log("yay");
+		} else {
+			console.log("fuck yay");
+		};
+	}
+
+	screenSize();
+
 });
