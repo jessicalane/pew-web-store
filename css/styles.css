@@ -114,3 +114,10 @@ nav ul li {
     max-width: 200px;
     height: auto;
 }
+
+/*Footer*/
+
+footer {
+    display: inline-block;
+    background-color: #716E6E;
+}
