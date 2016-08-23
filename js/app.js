@@ -14,15 +14,16 @@ $(document).ready(function() {
 
 	mobileNav();
 
-//Testing screen size
-	function screenSize() {
+//Menu menu config for mobile
+	function mobileConfig() {
 		if ($(document).width() <= 1000) {
-			console.log("yay");
+			$('.final').hide();
+			$('.secondlayer').addClass('disabled');
 		} else {
-			console.log("fuck yay");
+			console.log("working");
 		};
 	}
 
-	screenSize();
+	mobileConfig();
 
 });
