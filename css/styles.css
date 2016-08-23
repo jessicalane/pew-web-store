@@ -89,24 +89,33 @@ nav ul li {
 
 /*Carousel*/
 
-#owl-car {
+#owl-car-lifestyle {
     max-width: 900px;
     margin: auto;
 }
 
-#owl-car .item img {
+#owl-car-lifestyle .item img {
     display: block;
     width: 100%;
     height: auto;
     margin: auto;
 }
 
-#carousel {
+#owl-car-featured {
+    max-width: 900px;
+    margin: auto;
+}
+
+#lifestylecarousel {
     margin-top: 90px;
     text-align: center;
 }
 
 /*Featured Items*/
+
+#featuredproducts h3 {
+    font-style: italic;
+}
 
 .featureditem img {
     max-width: 200px;
@@ -127,4 +136,7 @@ nav ul li {
 footer {
     display: inline-block;
     background-color: #716E6E;
+}
+
+#newsletter {
 }
