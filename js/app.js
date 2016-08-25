@@ -1,4 +1,4 @@
-$(document).ready(function() {
+ $(document).ready(function() {
 
 // Mobile navigation functions for scrolling/clicking
 	function mobileNav() {
@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 	mobileNav();
 
-//Menu menu config for mobile
+//Menu config for mobile
 	function mobileConfig() {
 		if ($(document).width() <= 1000) {
 			$('.final').hide();
