@@ -1,5 +1,15 @@
 /*Menu Navigation*/
 
+@media (max-width: 768px) {
+    .dropdown-submenu>a:after {
+        display: none !important;
+    }
+
+    nav ul li {
+        display: block !important;
+    }
+}
+
 nav ul {
 	list-style: none;
 }
