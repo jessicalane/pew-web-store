@@ -1,7 +1,5 @@
 body {
     font-family: "Whitney SSm A", "Whitney SSm B";
-    font-style: normal;
-    font-weight: 400;
 }
 
 /*Menu Navigation*/
@@ -77,8 +75,9 @@ nav ul li {
 }
 
 .navbar {
-	background: rgba(255,255,255,0.9);
+	background: rgba(255,255,255,0.8);
 	border-bottom: 0px;
+    font-weight: 600;
 }
 
 .caret-up {
@@ -100,10 +99,10 @@ nav ul li {
 #logo {
     max-width: 50px;
     height: auto;
-    margin: 5px;
+    margin: 0px 5px;
 }
 
-/*Carousel*/
+/*Lifestyle Carousel*/
 
 #owl-car-lifestyle {
     max-width: 900px;
@@ -123,14 +122,21 @@ nav ul li {
 }
 
 #lifestylecarousel {
-    margin-top: 90px;
     text-align: center;
+    background-color: #E1E2E0;
+}
+
+.item {
+    margin-top: 75px;
 }
 
 /*Featured Items*/
 
-#featuredproducts h3 {
+#homepagefeatured h2 {
     font-style: italic;
+    max-width: 950px;
+    margin: 25px auto;
+    font-size: 60px;
 }
 
 .featureditem img {
@@ -145,6 +151,10 @@ nav ul li {
     clear: none;
     color: #000;
     font-style: italic;
+}
+
+#homepagefeatured {
+    margin: 0 auto;
 }
 
 /*Footer*/
