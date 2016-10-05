@@ -2,6 +2,10 @@ body {
     font-family: "Whitney SSm A", "Whitney SSm B";
 }
 
+#div__body {
+    margin-top: 75px !important;
+}
+
 /*Menu Navigation*/
 
 @media (max-width: 768px) {
@@ -11,6 +15,10 @@ body {
 
     nav ul li {
         display: block !important;
+    }
+
+    nav {
+        background-color: white;
     }
 }
 
@@ -154,6 +162,17 @@ nav ul li {
 
 #homepagefeatured {
     margin: 0 auto;
+}
+
+/*Category Item List*/
+
+#category-item-list {
+    width: 85%;
+    margin: auto;
+}
+
+#category-title-heading {
+    margin-bottom: 30px;
 }
 
 /*Footer*/
