@@ -175,6 +175,10 @@ nav ul li {
     margin-bottom: 30px;
 }
 
+.cat-price-size p {
+    display: inline-block;
+}
+
 /*Footer*/
 
 footer {

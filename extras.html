@@ -20,10 +20,19 @@
 <!--function: table cells from NLITEMLIST-->
 <div>
 	<div class="col-lg-4">
-		<a class="" href="<%=getCurrentAttribute('item', 'urlcomponent')%>">
-			<img src="<%=getCurrentAttribute('item', 'storedisplaythumbnail')%>" />
-		</a>
-		<p><%=getCurrentAttribute('item', 'storedescription')%></p>	
+		<div>
+			<a class="" href="<%=getCurrentAttribute('item', 'urlcomponent')%>">
+				<img class="thumbnail-img" src="<%=getCurrentAttribute('item', 'storedisplaythumbnail')%>" />
+			</a>
+		</div>
+		<div>
+			<h3><%=getCurrentAttribute('item', 'displayname')%></h3>
+			<p class="cat-quick-description"><%=getCurrentAttribute('item', 'storedescription')%></p>
+		</div>
+		<div class="cat-price-size">
+			<p><%=getCurrentAttribute('item', 'salespricehtml')%></p>
+			<p><%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
+		</div>
 	</div>
 </div>
 
