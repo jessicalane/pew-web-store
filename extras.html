@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 
+
+<!--to add to: Pewabic Category Item List-->
+<!--function: adds header to Category Item List; NLITEMLIST uses column requirements from layout-->
 <td>
 	<table id="category-item-list">
 		<tr>
@@ -12,3 +15,16 @@
 		</tr>
 	</table>
 </td>
+
+<!--to add to: Pewabic Cell Template-->
+<!--function: table cells from NLITEMLIST-->
+<div>
+	<div class="col-lg-4">
+		<a href="<%=getCurrentAttribute('item', 'urlcomponent')%>">
+			<img src="<%getCurrentAttribute('item', 'storeddisplaythumbnail')%>" />
+		</a>
+		<p><%=getCurrentAttribute('item', 'storedetaileddescription')%></p>	
+	</div>
+</div>
+
+
