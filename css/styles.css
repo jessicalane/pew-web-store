@@ -216,6 +216,19 @@ nav ul li {
     width: 85%!important;
 }
 
+/*Item Drilldown Template*/
+.item-img {
+    text-align: center;
+}
+
+.item-img img {
+    max-width: 100%;
+}
+
+.item-price-dimensions {
+    text-align: center;
+}
+
 /*Footer*/
 
 footer {
