@@ -11,22 +11,24 @@
 			</td>
 		</tr>
 		<tr>
-			<NLITEMLIST>
+			<div class="row">
+				<NLITEMLIST>
+			</div>
 		</tr>
 	</table>
 </td>
 
 <!--to add to: Pewabic Cell Template-->
 <!--function: table cells from NLITEMLIST-->
-<div>
-	<div class="col-lg-4">
+<div class="row">
+	<div class="col-lg-4 col-md-4 col-sm-6">
 		<div>
 			<a class="" href="<%=getCurrentAttribute('item', 'urlcomponent')%>">
 				<img class="thumbnail-img" src="<%=getCurrentAttribute('item', 'storedisplaythumbnail')%>" />
 			</a>
 		</div>
 		<div>
-			<h3><%=getCurrentAttribute('item', 'displayname')%></h3>
+			<h3><%=getCurrentAttribute('item', 'storedisplayname')%></h3>
 			<p class="cat-quick-description"><%=getCurrentAttribute('item', 'storedescription')%></p>
 		</div>
 		<div class="cat-price-size">
