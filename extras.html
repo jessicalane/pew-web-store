@@ -20,20 +20,20 @@
 
 <!--to add to: Pewabic Cell Template-->
 <!--function: table cells from NLITEMLIST-->
-<div class="row">
+<div>
 	<div class="col-lg-4 col-md-4 col-sm-6">
-		<div>
-			<a class="" href="<%=getCurrentAttribute('item', 'urlcomponent')%>">
+		<div class="cat-img">
+			<a href="<%=getCurrentAttribute('item', 'urlcomponent')%>">
 				<img class="thumbnail-img" src="<%=getCurrentAttribute('item', 'storedisplaythumbnail')%>" />
 			</a>
 		</div>
 		<div>
-			<h3><%=getCurrentAttribute('item', 'storedisplayname')%></h3>
+			<h3 class="cat-display-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h3>
 			<p class="cat-quick-description"><%=getCurrentAttribute('item', 'storedescription')%></p>
 		</div>
 		<div class="cat-price-size">
-			<p><%=getCurrentAttribute('item', 'salespricehtml')%></p>
-			<p><%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
+			<p class="cat-price"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
+			<p class="cat-size"><%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
 		</div>
 	</div>
 </div>
