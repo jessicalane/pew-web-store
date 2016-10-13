@@ -229,6 +229,10 @@ nav ul li {
     text-align: center;
 }
 
+.item-details h1 {
+    text-align: center;
+}
+
 /*Footer*/
 
 footer {
