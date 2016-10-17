@@ -44,17 +44,22 @@
 <!-- to add to: Pewabic Item Drilldown -->
 <!--function: item drilldown template-->
 <div class="row">
-	<div class="col-lg-1"></div>
-	<div class="col-lg-10">
-		<div class="item-img col-lg-7">
+	<div class="col-lg-1 col-md-1"></div>
+	<div class="col-lg-10 col-md-10">
+		<div class="item-img col-lg-5 col-md-5">
 			<img src="<%=getCurrentAttribute('item', 'storedisplayimagehtml')%>" />
 		</div>
-		<div class="item-details col-lg-5">
-			<h1><%=getCurrentAttribute('item', 'storedisplayname')%></h1>
-			<p class="item-price-dimensions"><%=getCurrentAttribute('item', 'salespricehtml')%> | <%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
+		<div class="item-details col-lg-7 col-md7">
+			<h1 id="item-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h1>
+			<p id="item-price"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
+			<p id="item-dimensions"><%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
+			<p id="item-description"><%=getCurrentAttribute('item', 'storedetaileddescription')%></p>
+
+			<NLADDTOCARTOPTIONS>
+
 		</div>
 	</div>
-	<div class="col-lg-1"></div>
+	<div class="col-lg-1 col-md-1"></div>
 </div>
 
 

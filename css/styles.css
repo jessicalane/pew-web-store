@@ -232,12 +232,18 @@ hr {
     max-width: 100%;
 }
 
-.item-price-dimensions {
-    text-align: center;
+#item-name {
+    font-size: 50px!important;
 }
 
-.item-details h1 {
-    text-align: center;
+#item-price {
+    font-size: 24px;
+    font-style: italic;
+}
+
+#item-description {
+    font-size: 20px;
+    margin-top: 25px;
 }
 
 /*Footer*/
