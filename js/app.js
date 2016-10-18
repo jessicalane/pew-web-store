@@ -26,14 +26,4 @@
 
 	mobileConfig();
 
-//Image changes for glazes
-
-	function glazeChange() {
-		$('#custcolglazes').change(function() {
-			$('#item-img')[0].src = "http://store.pewabic.co/"+this.value+".jpg"
-		});
-	}
-
-	glazeChange();
-
 });
