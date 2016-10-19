@@ -43,34 +43,36 @@
 
 <!-- to add to: Pewabic Item Drilldown -->
 <!--function: item drilldown template-->
-<div class="row">
-	<div class="col-lg-1 col-md-1"></div>
-	<div class="col-lg-10 col-md-10">
-		<div class="item-img-container col-lg-5 col-md-5">
-			<img id="item-img" src="<%=getCurrentAttribute('item', 'storedisplayimage')%>" />
-		</div>
-		<div class="item-details col-lg-7 col-md7">
-			<h1 id="item-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h1>
-			<p id="item-price"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
-			<p id="item-dimensions"><%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
-			<%=getCurrentAttribute('item','addToCartHTML')%>
-			<p id="item-description"><%=getCurrentAttribute('item', 'storedetaileddescription')%></p>
-			<script type="text/javascript">
-				var glazesPull = <%=getCurrentAttribute('item', 'internalid')%>;
-				var glazes = glazesPull.toString();
+<td>
+	<div class="row">
+		<div class="col-lg-1 col-md-1"></div>
+		<div class="col-lg-10 col-md-10">
+			<div class="item-img-container col-lg-5 col-md-5">
+				<img id="item-img" src="<%=getCurrentAttribute('item', 'storedisplayimage')%>" />
+			</div>
+			<div class="item-details col-lg-7 col-md7">
+				<h1 id="item-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h1>
+				<p id="item-price"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
+				<p id="item-dimensions"><%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
+				<div><table><%=getCurrentAttribute('item','addToCartHTML')%></table></div>
+				<p id="item-description"><%=getCurrentAttribute('item', 'storedetaileddescription')%></p>
+				<script type="text/javascript">
+					var glazesPull = <%=getCurrentAttribute('item', 'internalid')%>;
+					var glazes = glazesPull.toString();
 
-				$(document).ready(function() {
-					$('#custcolglazes').change(function() {
-						$('#item-img')[0].src = "http://store.pewabic.co/"+ glazes + this.value + ".jpg"
+					$(document).ready(function() {
+						$('#custcolglazes').change(function() {
+							$('#item-img')[0].src = "http://store.pewabic.co/"+ glazes + this.value + ".jpg"
+						});
 					});
-				});
 
-				
-			</script>
+					
+				</script>
+			</div>
 		</div>
+		<div class="col-lg-1 col-md-1"></div>
 	</div>
-	<div class="col-lg-1 col-md-1"></div>
-</div>
+</td>
 
 
 <!--to add to: Add to Cart Button-->
