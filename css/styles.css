@@ -173,6 +173,8 @@ nav ul li {
 
 #category-title-heading {
     margin-bottom: 30px;
+    font-size: 100px!important;
+    margin-left: 25px;
 }
 
 .cat-price-size {
@@ -189,6 +191,7 @@ nav ul li {
 .cat-display-name {
     text-align: center;
     margin-top: 10px!important;
+    margin-bottom: 0px!important;
     font-weight: 600;
     font-size: 20px;
 }
@@ -213,8 +216,19 @@ nav ul li {
     height: 50px;
 }
 
+.cat-options {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.cat-items {
+    text-align: center;
+    margin-top: 25px;
+}
+
 hr {
     margin-bottom: 10px!important;
+    margin-top: 5px!important;
 }
 
 /*These !important below account for user input error on item record.*/

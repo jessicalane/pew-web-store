@@ -19,9 +19,9 @@
 </td>
 
 <!--to add to: Pewabic Cell Template-->
-<!--function: table cells from NLITEMLIST-->
-<div>
-	<div class="col-lg-4 col-md-4 col-sm-6">
+<!--function: table cells from NLITEMLIST-->	
+<div class="col-lg-4 col-md-4 col-sm-6">
+	<div class="cat-items">
 		<div class="cat-img">
 			<a href="<%=getCurrentAttribute('item', 'urlcomponent')%>">
 				<img class="thumbnail-img" src="<%=getCurrentAttribute('item', 'storedisplaythumbnail')%>" />
@@ -29,8 +29,11 @@
 		</div>
 		<div>
 			<h3 class="cat-display-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h3>
+			<p class="cat-options"><%=getCurrentAttribute('item', 'custitemoptionsavailable')%></p>
 			<!-- <p class="cat-quick-description"><%=getCurrentAttribute('item', 'storedescription')%></p> -->
 		</div>
+	</div>
+	<div>
 		<hr width="85%%" color="black" size="4">
 		<div class="cat-price-size">
 			<p class="cat-price"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
@@ -40,52 +43,8 @@
 	</div>
 </div>
 
-
 <!-- to add to: Pewabic Item Drilldown -->
 <!--function: item drilldown template-->
-<td>
-	<div class="row">
-		<div class="col-lg-1 col-md-1"></div>
-		<div class="col-lg-10 col-md-10">
-			<div class="item-img-container col-lg-5 col-md-5">
-				<img id="item-img" src="<%=getCurrentAttribute('item', 'storedisplayimage')%>" />
-			</div>
-			<div class="item-details col-lg-7 col-md7">
-				<h1 id="item-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h1>
-				<p id="item-price"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
-				<p id="item-dimensions"><%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
-				<div><table><%=getCurrentAttribute('item','addToCartHTML')%></table></div>
-				<p id="item-description"><%=getCurrentAttribute('item', 'storedetaileddescription')%></p>
-				<script type="text/javascript">
-					var glazesPull = <%=getCurrentAttribute('item', 'internalid')%>;
-					var glazes = glazesPull.toString();
-
-					$(document).ready(function() {
-						$('#custcolglazes').change(function() {
-							$('#item-img')[0].src = "http://store.pewabic.co/"+ glazes + this.value + ".jpg"
-						});
-					});
-
-					
-				</script>
-			</div>
-		</div>
-		<div class="col-lg-1 col-md-1"></div>
-	</div>
-</td>
-
-<table>
-	<tbody>
-		<tr>
-			<td>
-				<%=getCurrentAttribute('item', 'relateditemshtml')%>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-
-
 <td>
 	<div class="row">
 		<div class="col-lg-1 col-md-1"></div>
@@ -116,6 +75,12 @@
 		<div class="col-lg-1 col-md-1"></div>
 	</div>
 </td>
+<div class="col-lg-1 col-md-1"></div>
+	<table>
+		<%=getCurrentAttribute('item', 'relateditemshtml')%>
+	</table>
+</div>
+<div class="col-lg-1 col-md-1"></div>
 
 
 
@@ -133,7 +98,10 @@
       id='addtocart'          name='addtocart'
       onkeypress="window.event.cancelBubble=true;"
       onclick="<NLADDTOCARTCLICKSCRIPT>">
-</td> </tr>
+	</td> 
+</tr>
+
+
 
 
 

@@ -26,4 +26,17 @@
 
 	mobileConfig();
 
+//Item List Category Auto-Heights
+	function catItemHeights() {
+		var elementHeights = $('.cat-items').map(function() {
+			return $(this).height();
+		}).get();
+
+		var maxHeight = Math.max.apply(null, elementHeights);
+
+		$('.cat-items').height(maxHeight);
+	}
+
+	catItemHeights();
+
 });
