@@ -87,7 +87,7 @@ nav ul li {
 }
 
 .navbar {
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.9);
 	border-bottom: 0px;
     font-weight: 600;
 }
@@ -119,10 +119,6 @@ nav ul li {
     background-color: rgba(50, 50, 50, 0.1)
 }
 
-p#cart-total {
-    margin: 14px 0px;
-    padding-right: 10px;
-}
 
 /*Lifestyle Carousel*/
 
@@ -243,6 +239,10 @@ p#cart-total {
 hr {
     margin-bottom: 10px!important;
     margin-top: 5px!important;
+}
+
+img.thumbnail-img {
+    max-width: 300px;
 }
 
 /*These !important below account for user input error on item record.*/
