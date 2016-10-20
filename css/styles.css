@@ -114,9 +114,14 @@ nav ul li {
     margin: 0px 5px;
 }
 
-#cart-total {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.cart {
+    height: 50px;
+    background-color: rgba(50, 50, 50, 0.1)
+}
+
+p#cart-total {
+    margin: 14px 0px;
+    padding-right: 10px;
 }
 
 /*Lifestyle Carousel*/
