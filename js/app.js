@@ -39,4 +39,17 @@
 
 	catItemHeights();
 
+//Related Items Auto-Heights
+	function relatedItemHeights() {
+		var elementHeights = $('.related-items').map(function() {
+			return $(this).height();
+		}).get();
+
+		var maxHeight = Math.max.apply(null, elementHeights);
+
+		$('.related-items').height(maxHeight);
+	}
+
+	relatedItemHeights();
+
 });

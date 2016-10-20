@@ -18,7 +18,7 @@
 	</table>
 </td>
 
-<!--to add to: Pewabic Cell Template-->
+<!--to add to: Pewabic Cell Template for Category Item List-->
 <!--function: table cells from NLITEMLIST-->	
 <div class="col-lg-4 col-md-4 col-sm-6">
 	<div class="cat-items">
@@ -100,6 +100,31 @@
       onclick="<NLADDTOCARTCLICKSCRIPT>">
 	</td> 
 </tr>
+
+<!--to add to: Pewabic Cell Template for Related Items-->
+<!--function: table cells for NLITEMLIST used in Related Items-->
+<div class="col-lg-3 col-md-3 col-sm-6">
+	<div class="related-items">
+
+		<div class="related-img">
+			<a href="<%=getCurrentAttribute('item', 'urlcomponent')%>">
+				<img class="related-thumbnail-img" src="<%=getCurrentAttribute('item', 'storedisplaythumbnail')%>" />
+			</a>
+		</div>
+		<div>
+			<h3 class="related-display-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h3>
+			<p class="related-options"><%=getCurrentAttribute('item', 'custitemoptionsavailable')%></p>
+		</div>
+	</div>
+	<div>
+		<hr width="85%%" color="black" size="4">
+		<div class="related-price-size">
+			<p class="related-price"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
+			<p class="related-size"><%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
+		</div>
+		<hr width="85%" color="black" size="4">
+	</div>
+</div>
 
 
 

@@ -1,5 +1,5 @@
 * {
-    font-family: "Whitney SSm A", "Whitney SSm B"!important;
+    font-family: "Whitney SSm A", "Whitney SSm B";
 }
 
 #div__body {
@@ -17,8 +17,12 @@
         display: block !important;
     }
 
-    nav {
-        background-color: white;
+    .navbar {
+        background-color: white!important;
+    }
+
+    #category-title-heading {
+        font-size: 50px!important;
     }
 }
 
@@ -173,22 +177,22 @@ nav ul li {
 
 #category-title-heading {
     margin-bottom: 30px;
-    font-size: 100px!important;
+    font-size: 100px;
     margin-left: 25px;
 }
 
-.cat-price-size {
+.cat-price-size, .related-price-size {
     width: 75%;
     margin: auto;
 }
 
-.cat-price-size p {
+.cat-price-size p, .related-price-size p {
     display: inline-block;
 }
 
 /*Category Item List - Cell Template*/
 
-.cat-display-name {
+.cat-display-name, .related-display-name {
     text-align: center;
     margin-top: 10px!important;
     margin-bottom: 0px!important;
@@ -201,27 +205,27 @@ nav ul li {
     height: 300px;
 }
 
-.cat-price {
+.cat-price, .related-price {
     float: left;
 }
 
-.cat-size {
+.cat-size, .related-size {
     float: right;
 }
 
-.cat-quick-description {
+.cat-quick-description, .related-quick-description {
     font-size: 16px;
     margin: auto;
     width: 65%;
     height: 50px;
 }
 
-.cat-options {
+.cat-options, .related-options {
     font-style: italic;
     font-size: 12px;
 }
 
-.cat-items {
+.cat-items, .related-items {
     text-align: center;
     margin-top: 25px;
 }
@@ -262,6 +266,16 @@ hr {
     font-size: 20px;
     margin: 25px 45px;
     text-align: justify;
+}
+
+/*Related Items on Drilldown*/
+
+img.related-thumbnail-img {
+    width: 175px;
+}
+
+.related-img {
+    height: 175px;
 }
 
 /*Footer*/
