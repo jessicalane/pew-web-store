@@ -1,5 +1,5 @@
 * {
-    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
 }
 
 #div__body {
@@ -273,7 +273,7 @@ img.thumbnail-img {
     margin: 0px 45px 20px;
 }
 
-.item-img img {
+img#item-img {
     max-width: 100%;
 }
 
