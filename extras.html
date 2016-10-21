@@ -135,9 +135,39 @@
 	</div>
 </div>
 
-<!--to add to: Layout for Category Listings (will appear on mobile only) -->
-<!--function: same as layout for Category Items but for Sub-categories-->
+<!--Pewabic Non-Matrix Item Drilldown Template-->
+<td class="container">
+	<div class="row">
+		<div class="col-lg-1 col-md-1 hidden-xs"></div>
+		<div class="col-lg-10 col-md-10 col-xs-12">
+			<div class="item-img-container">
+				<img id="item-img" src="<%=getCurrentAttribute('item', 'storedisplayimage')%>" />
+			</div>
+			<div class="item-details">
+				<h1 id="item-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h1>
+				<p id="item-price"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
+				<p id="item-dimensions"><%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
+				<div><table><%=getCurrentAttribute('item', 'stockstatusmessagehtml')%><%=getCurrentAttribute('item','addToCartHTML')%></table></div>
+				<p id="item-description"><%=getCurrentAttribute('item', 'storedetaileddescription')%></p>
+				<script type="text/javascript">
+					var glazesPull = <%=getCurrentAttribute('item', 'internalid')%>;
+					var glazes = glazesPull.toString();
 
+					$(document).ready(function() {
+						$('#custcolglazes, #custcolttone, #custcolmlt, #custcolird').change(function() {
+							$('#item-img')[0].src = "http://store.pewabic.co/"+ glazes + this.value + ".jpg"
+						});
+					});
+					
+				</script>
+			</div>
+		</div>
+		<div class="col-lg-1 col-md-1 hidden-xs"></div>
+	</div>
+</td>
+<table style="margin: auto;">
+	<%=getCurrentAttribute('item', 'relateditemshtml')%>
+</table>
 
 
 

@@ -292,6 +292,10 @@ img#item-img {
     text-align: justify;
 }
 
+[id^="itemavail"] {
+    color: #7E2526;
+}
+
 /*Related Items on Drilldown*/
 
 img.related-thumbnail-img {
