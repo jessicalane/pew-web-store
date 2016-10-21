@@ -62,10 +62,10 @@
 
 <!-- to add to: Pewabic Item Drilldown -->
 <!--function: item drilldown template-->
-<td>
+<td class="container">
 	<div class="row">
-		<div class="col-lg-1 col-md-1"></div>
-		<div class="col-lg-10 col-md-10">
+		<div class="col-lg-1 col-md-1 hidden-xs"></div>
+		<div class="col-lg-10 col-md-10 col-xs-12">
 			<div class="item-img-container">
 				<img id="item-img" src="<%=getCurrentAttribute('item', 'storedisplayimage')%>" />
 			</div>
@@ -89,19 +89,12 @@
 				</script>
 			</div>
 		</div>
-		<div class="col-lg-1 col-md-1"></div>
+		<div class="col-lg-1 col-md-1 hidden-xs"></div>
 	</div>
 </td>
-<div class="col-lg-1 col-md-1"></div>
-	<table>
-		<%=getCurrentAttribute('item', 'relateditemshtml')%>
-	</table>
-</div>
-<div class="col-lg-1 col-md-1"></div>
-
-
-
-
+<table style="margin: auto;">
+	<%=getCurrentAttribute('item', 'relateditemshtml')%>
+</table>
 
 
 <!--to add to: Add to Cart Button-->
@@ -109,9 +102,9 @@
 
 <tr align='left'>
    <td><NLADDTOCARTOPTIONS></td>
-   <td class='smalltext' width='1%'>
+   <td class='smalltext add-to-cart' width='100%'>
       <NLADDTOCARTITEMID><NLADDTOCARTQUANTITY>
-      <INPUT type='button' class='bgbutton' value='Buy Now!'
+      <INPUT type='button' class='bgbutton' value='Add to Cart'
       id='addtocart'          name='addtocart'
       onkeypress="window.event.cancelBubble=true;"
       onclick="<NLADDTOCARTCLICKSCRIPT>">

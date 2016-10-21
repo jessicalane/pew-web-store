@@ -38,7 +38,7 @@
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 					    <li class="register"><NLUSERINFO2></li>
-					    <li class="cart"><a href="<%=getCartUrl()%>"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+					    <li class="cart"><a href="<%=getCartUrl()%>"><span class="glyphicon glyphicon-shopping-cart" style="margin-right: -20px;"></span></a></li>
 					    <li class="cart"><a href="<%=getCartUrl()%>"><p id="cart-total"><%=getCartTotal()%></p></a></li>
 					</ul>
 					<ul class="nav navbar-nav">
@@ -46,7 +46,7 @@
 							<a href="/Browse-Store" class="dropdown-toggle" data-toggle="dropdown">Browse Store <b class="caret"></b></a>
 							<ul class="dropdown-menu multi-level">
 								<li class="dropdown-submenu">
-									<a href="<%=getAttribute('sitecategory', 1268, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory',1268,'pagetitle')%></a>
+									<a href="<%=getAttribute('sitecategory', 1268, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory',1268,'pagetitle')%></a> <!--Gift Tile-->
 										<ul class="dropdown-menu final">
 											<li><a href="<%=getAttribute('sitecategory', 1272, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1272, 'pagetitle')%></a></li> 
 											<li><a href="<%=getAttribute('sitecategory', 1273, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1273, 'pagetitle')%></a></li>
@@ -57,10 +57,10 @@
 										</ul>
 								</li>
 								<li>
-									<a href="<%=getAttribute('sitecategory', 1269, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1269, 'pagetitle')%></a>
+									<a href="<%=getAttribute('sitecategory', 1269, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1269, 'pagetitle')%></a> <!--Ornaments-->
 								</li>
 								<li class="dropdown-submenu">
-									<a href="<%=getAttribute('sitecategory', 1270, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1270, 'pagetitle')%></a>
+									<a href="<%=getAttribute('sitecategory', 1270, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1270, 'pagetitle')%></a> <!--Vessels-->
 										<ul class="dropdown-menu final">
 											<li><a href="<%=getAttribute('sitecategory', 1278, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1278, 'pagetitle')%></a></li>	
 											<li><a href="<%=getAttribute('sitecategory', 1279, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1279, 'pagetitle')%></a></li>	
@@ -68,10 +68,10 @@
 										</ul>
 								</li>
 								<li>
-									<a href="<%=getAttribute('sitecategory', 1271, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1271, 'pagetitle')%></a>
+									<a href="<%=getAttribute('sitecategory', 1271, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1271, 'pagetitle')%></a> <!--Address Numbers-->
 								</li>
 								<li>
-									<a href="<%=getAttribute('sitecategory', 1281, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1281, 'pagetitle')%></a>
+									<a href="<%=getAttribute('sitecategory', 1281, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1281, 'pagetitle')%></a><!--Dinnerware-->
 								</li>
 							</ul>
 						</li>
@@ -79,26 +79,40 @@
 							<a href="/classes-events" class="dropdown-toggle" data-toggle="dropdown">Classes &amp; Events<b class="caret"></b></a>
 							<ul class="dropdown-menu multi-level">
 								<li class="dropdown-submenu">
-									<a href="<%=getAttribute('sitecategory', 1304, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1304, 'pagetitle')%></a>
+									<a href="<%=getAttribute('sitecategory', 1304, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1304, 'pagetitle')%></a> <!--Adult-->
 										<ul class="dropdown-menu final">
 											<li><a href="<%=getAttribute('sitecategory', 1306, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1306, 'pagetitle')%></a></li>
 											<li><a href="<%=getAttribute('sitecategory', 1307, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1307, 'pagetitle')%></a></li>
 										</ul>
 								</li>
 								<li class="dropdown-submenu">
-									<a href="<%=getAttribute('sitecategory', 1305, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1305, 'pagetitle')%></a>
+									<a href="<%=getAttribute('sitecategory', 1305, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1305, 'pagetitle')%></a> <!--Youth-->
 										<ul class="dropdown-menu final">
 											<li><a href="<%=getAttribute('sitecategory', 1309, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1309, 'pagetitle')%></a></li>
 											<li><a href="<%=getAttribute('sitecategory', 1308, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1308, 'pagetitle')%></a></li>
 										</ul>
 								</li>
 								<li class="dropdown-submenu">
-									<a href="<%=getAttribute('sitecategory', 1310, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1310, 'pagetitle')%></a>
+									<a href="<%=getAttribute('sitecategory', 1310, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1310, 'pagetitle')%></a> <!--Events-->
 										<ul class="dropdown-menu final">
 											<li><a href="<%=getAttribute('sitecategory', 1311, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1311, 'pagetitle')%></a></li>
 											<li><a href="<%=getAttribute('sitecategory', 1312, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1312, 'pagetitle')%></a></li>
 											<li><a href="<%=getAttribute('sitecategory', 1313, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1313, 'pagetitle')%></a></li>
 										</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="/featured" class="dropdown-toggle" data-toggle="dropdown">Featured<b class="caret"></b></a>
+							<ul class="dropdown-menu multi-level">
+								<li>
+									<a href="<%=getAttribute('sitecategory', 3124, 'urlcomponent')%>"><%=getAttribute('sitecategory', 3124, 'pagetitle')%></a>
+								</li>
+								<li>
+									<a href="<%=getAttribute('sitecategory', 3125, 'urlcomponent')%>"><%=getAttribute('sitecategory', 3125, 'pagetitle')%></a>
+								</li>
+								<li>
+									<a href="<%=getAttribute('sitecategory', 3126, 'urlcomponent')%>"><%=getAttribute('sitecategory', 3126, 'pagetitle')%></a>
 								</li>
 							</ul>
 						</li>
