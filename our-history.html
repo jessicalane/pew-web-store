@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Our History | Pewabic Store Online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="description">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://system.na2.netsuite.com/c.3772784/site/css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="/c.3772784/site/css/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7818292/6938552/css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="/c.3772784/site/css/styles.css">
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="/c.3772784/site/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/c.3772784/site/js/owl.carousel.min.js" type="text/javascript"></script>
+	<script src="/c.3772784/site/js/app.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+	<nav>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="/"><img alt="Brand" id="logo" src="http://store.pewabic.co/site/images/pewabic_logo.png"></a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+					    <li class="register"><NLUSERINFO2></li>
+					    <li class="cart"><a href="<%=getCartUrl()%>"><span class="glyphicon glyphicon-shopping-cart" style="margin-right: -20px;"></span></a></li>
+					    <li class="cart"><a href="<%=getCartUrl()%>"><p id="cart-total"><%=getCartTotal()%></p></a></li>
+					</ul>
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="/Browse-Store" class="dropdown-toggle" data-toggle="dropdown">Browse Store <b class="caret"></b></a>
+							<ul class="dropdown-menu multi-l evel">
+								<li class="dropdown-submenu">
+									<a href="<%=getAttribute('sitecategory', 1268, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory',1268,'pagetitle')%></a> <!--Gift Tile-->
+										<ul class="dropdown-menu final">
+											<li><a href="<%=getAttribute('sitecategory', 1272, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1272, 'pagetitle')%></a></li> 
+											<li><a href="<%=getAttribute('sitecategory', 1273, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1273, 'pagetitle')%></a></li>
+											<li><a href="<%=getAttribute('sitecategory', 1276, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1276, 'pagetitle')%></a></li>
+											<li><a href="<%=getAttribute('sitecategory', 1274, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1274, 'pagetitle')%></a></li>
+											<li><a href="<%=getAttribute('sitecategory', 1277, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1277, 'pagetitle')%></a></li>
+											<li><a href="<%=getAttribute('sitecategory', 1275, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1275, 'pagetitle')%></a></li>							
+										</ul>
+								</li>
+								<li>
+									<a href="<%=getAttribute('sitecategory', 1269, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1269, 'pagetitle')%></a> <!--Ornaments-->
+								</li>
+								<li class="dropdown-submenu">
+									<a href="<%=getAttribute('sitecategory', 1270, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1270, 'pagetitle')%></a> <!--Vessels-->
+										<ul class="dropdown-menu final">
+											<li><a href="<%=getAttribute('sitecategory', 1278, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1278, 'pagetitle')%></a></li>	
+											<li><a href="<%=getAttribute('sitecategory', 1279, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1279, 'pagetitle')%></a></li>	
+											<li><a href="<%=getAttribute('sitecategory', 1280, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1280, 'pagetitle')%></a></li>							
+										</ul>
+								</li>
+								<li>
+									<a href="<%=getAttribute('sitecategory', 1271, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1271, 'pagetitle')%></a> <!--Address Numbers-->
+								</li>
+								<li>
+									<a href="<%=getAttribute('sitecategory', 1281, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1281, 'pagetitle')%></a><!--Dinnerware-->
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="/classes-events" class="dropdown-toggle" data-toggle="dropdown">Classes &amp; Events<b class="caret"></b></a>
+							<ul class="dropdown-menu multi-level">
+								<li class="dropdown-submenu">
+									<a href="<%=getAttribute('sitecategory', 1304, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1304, 'pagetitle')%></a> <!--Adult-->
+										<ul class="dropdown-menu final">
+											<li><a href="<%=getAttribute('sitecategory', 1306, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1306, 'pagetitle')%></a></li>
+											<li><a href="<%=getAttribute('sitecategory', 1307, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1307, 'pagetitle')%></a></li>
+										</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="<%=getAttribute('sitecategory', 1305, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1305, 'pagetitle')%></a> <!--Youth-->
+										<ul class="dropdown-menu final">
+											<li><a href="<%=getAttribute('sitecategory', 1309, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1309, 'pagetitle')%></a></li>
+											<li><a href="<%=getAttribute('sitecategory', 1308, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1308, 'pagetitle')%></a></li>
+										</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="<%=getAttribute('sitecategory', 1310, 'urlcomponent')%>" class="dropdown-toggle secondlayer" data-toggle="dropdown"><%=getAttribute('sitecategory', 1310, 'pagetitle')%></a> <!--Events-->
+										<ul class="dropdown-menu final">
+											<li><a href="<%=getAttribute('sitecategory', 1311, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1311, 'pagetitle')%></a></li>
+											<li><a href="<%=getAttribute('sitecategory', 1312, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1312, 'pagetitle')%></a></li>
+											<li><a href="<%=getAttribute('sitecategory', 1313, 'urlcomponent')%>"><%=getAttribute('sitecategory', 1313, 'pagetitle')%></a></li>
+										</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="/featured" class="dropdown-toggle" data-toggle="dropdown">Featured<b class="caret"></b></a>
+							<ul class="dropdown-menu multi-level">
+								<li>
+									<a href="<%=getAttribute('sitecategory', 3124, 'urlcomponent')%>"><%=getAttribute('sitecategory', 3124, 'pagetitle')%></a>
+								</li>
+								<li>
+									<a href="<%=getAttribute('sitecategory', 3125, 'urlcomponent')%>"><%=getAttribute('sitecategory', 3125, 'pagetitle')%></a>
+								</li>
+								<li>
+									<a href="<%=getAttribute('sitecategory', 3126, 'urlcomponent')%>"><%=getAttribute('sitecategory', 3126, 'pagetitle')%></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="site/about-us.html">About Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+<div class="container">
+    <div class="page-header">
+        <h1 id="timeline">Our History</h1>
+    </div>
+	    <ul class="timeline">
+	        <li> 
+	          <div class="timeline-badge warning"><i class="glyphicon glyphicon-globe"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">c. 1860</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>The Arts and Crafts Movement begins in the British Isles.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge"><i class="glyphicon glyphicon-user"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1867</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Mary Chase Perry is born in Hancock, Michigan, a copper-mining town in the Upper Peninsula.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge primary"><i class="glyphicon glyphicon-home"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1877</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Perry&apos;s father, a physician, is killed. The family moves to Ann Arbor, Michigan, where Stratton begins to study art both formally and informally.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>The Perry family moves to Detroit.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Perry&apos;s neighbor, Horace James Caulkins, begins working as a dental supply dealer. He invents a portable, high-temperature oven &ndash; called the Revelation Kiln &ndash; for firing dental enamel.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge success"><i class="glyphicon glyphicon-globe"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">c. 1890</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>The Arts and Crafts Movement begins to take hold in Europe.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge info"><i class="glyphicon glyphicon-asterisk"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1897</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p><b>April</b> The first American Arts and Crafts Exhibition is held in Boston. The exhibit showcases 160 artists &ndash; half of whom are women.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p><b>June</b> The first American Society of Arts and Crafts is established in Boston.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p><b>October</b> Chicago&apos;s Arts and Crafts Society is established at Hull House.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge danger"><i class="glyphicon glyphicon-picture"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1900</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Gustav Stickley &ndash; who becomes one of the most prominent furniture makers in the Arts and Crafts style (also known as Mission style) &ndash; exhibits his new designs at the Grand Rapids Furniture Fair.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge warning"><i class="glyphicon glyphicon-apple"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1901</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Perry attends three weeks of private instruction at the New York State School of Clay&ndash;Working. An innovative hub, the school offers scientific, technical, practical and artistic training for manufacturing ceramic products. The school boasts the first glass laboratory of any ceramic school in the world.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Frank Lloyd Wright completes four houses that are now considered to mark the beginning of the Prairie Style &ndash; the architectural response to the Arts and Crafts Movement.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge"><i class="glyphicon glyphicon-fire"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">c. 1902</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Perry experiments with firing and glazing with a small kiln in the basement of Caulkins&apos; business.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge primary"><i class="glyphicon glyphicon-lamp"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1903</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Perry and Caulkins form a partnership and establish a studio in a vacant carriage house on Alfred Street in Detroit. They call it the &ldquo;Stable Studio.&rdquo;</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Perry hires Joseph Herrick &ndash; who is trained in pot-throwing &ndash; to work part-time at the Studio.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p><b>October 8</b> Perry and Caulkins accept their first order &ndash; for $1000 in bowls and lamp bases &ndash; from Burley &amp; Company, a Chicago business specializing in various types of china and pottery.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>The Burley &amp; Company catalog declares that Perry&apos;s pottery is the result of an unprecedented process of developing glazes that &ldquo;are soft and dull, yet lustrous and of a texture that is a delight to the touch.&rdquo;</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Pieces produced during this period are randomly marked &ldquo;Miss Perry&apos;s Pottery&rdquo; or &ldquo;Revelation Pottery.&rdquo;</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Burley encourages Perry and Caulkins to develop a formal business identity to help market their products.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge success"><i class="glyphicon glyphicon-tent"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1904</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>The Pottery is renamed &ldquo;Pewabic,&rdquo; said to be the Native American word and the name of the copper mine in Perry&apos;s hometown of Hancock, MI.</p>
+	            </div>
+	          </div>
+	        </li>
+	       	<li class="timeline-inverted">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Perry expands Pewabic&apos;s offerings to include architectural tiles. The Griswold Hotel in Detroit orders one of the first commissions, orders from around the country follow.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Pewabic soon outgrows its Stable-Studio location.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge info"><i class="glyphicon glyphicon-blackboard"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1906</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Perry and Caulkins commission Stratton and Baldwin, one of the most influential architectural firms in Detroit, to design a new studio. William Buck Stratton, who eventually marries Perry, is a supporter of the Arts and Crafts Movement.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>The Detroit Society of Arts and Crafts is established with George Booth, managing editor of the Detroit News, as president. Perry is a founding member; William Stratton and Horace Caulkins serve on the board.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Perry later serves as a trustee of what is now the Detroit Institute of Arts, establishes the ceramics department at the University of Michigan and teaches students in Wayne State University&apos;s ceramics department. Both U of M and Wayne State award Perry honorary degrees.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge danger"><i class="glyphicon glyphicon-briefcase"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1907</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Pewabic moves to its new home, a Tudor revival-style building on East Jefferson. The opening celebration attracts luminaries, including Professor Arthur W. Dow &ndash; of Columbia University in New York &ndash; and Charles Freer &ndash; founder of the Freer Gallery in Washington D.C.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Freer encourages Perry to experiment with iridescent glazes like those of ancient Chinese ceramic ware. He makes his collection of Oriental art available to her for study.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Sears Roebuck offers its first ready-made &ldquo;kit&rdquo; homes &ndash; an Arts and Crafts style bungalow. The price: $945.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge warning"><i class="glyphicon glyphicon-star"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1909</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>After years of experimenting, Perry discovers an iridescent glaze that establishes Pewabic as one of the most innovative potteries of its time.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge"><i class="glyphicon glyphicon-home"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1912</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>William Stratton begins plans to build a home for himself in Grosse Pointe Park.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge primary"><i class="glyphicon glyphicon-flag"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1916</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>The Detroit Arts and Crafts Society is the first in the US to construct its own building &ndash; a stucco cottage in Brush Park &ndash; which offers studio space for artists, sculptors and ceramists. The architects: William Stratton and Maxwell Gyrlls. For her part, Perry donates Pewabic tiles for the fireplace surround.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>Ceramics by Perry are some of the first products stocked and sold through Detroit’s Arts and Crafts Gallery.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge success"><i class="glyphicon glyphicon-heart"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1918</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Mary Chase Perry and William Stratton marry. Mary Chase Perry changes her name to Marry Chase Perry Stratton.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge info"><i class="glyphicon glyphicon-user"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1923</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Horace James Caulkins dies.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge danger"><i class="glyphicon glyphicon-education"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1926</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Encouraged by Mary Chase Perry Stratton, the Detroit Arts and Crafts Society establishes a school of art and design, known today as the College for Creative Studies.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge warning"><i class="glyphicon glyphicon-home"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1927</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>The William B. and Mary Chase Stratton House is built. The home, at 938 Three Mile Drive, features a roof covered with unglazed Pewabic tiles.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge"><i class="glyphicon glyphicon-usd"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1929</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>The stock market crashes on October 29 &ndash; &ldquo;Black Tuesday.&rdquo;</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>When the Depression reduces the demand for costlier wares, Pewabic produces ceramic jewelry featuring the pottery&apos;s unique iridescent glazes.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge primary"><i class="glyphicon glyphicon-king"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1947</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Mary Stratton receives the Charles Fergus Binns Medal, the country&apos;s most prestigious award in the field of ceramics.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge success"><i class="glyphicon glyphicon-user"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1961</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Mary Chase Perry Stratton dies at the age of 94, having never stopped working at the Pottery. Pewabic continues to operate for another five years under the direction of her former assistant and silent partnership of Caulkins&apos; widow.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge info"><i class="glyphicon glyphicon-education"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1964</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Caulkins&apos; son, Henry, deeds the Pewabic building and property to Michigan State University, which operates the site as part of its continuing education program until 1979.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge danger"><i class="glyphicon glyphicon-bookmark"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1970</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Pewabic is named to the State Register of Historic Sites.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge warning"><i class="glyphicon glyphicon-header"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1971</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>Pewabic earns a place in the National Register of Historic Places.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge"><i class="glyphicon glyphicon-book"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1979</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>The private, nonprofit Pewabic Society, Inc. is established.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge primary"><i class="glyphicon glyphicon-asterisk"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1981</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>The Pewabic Society, Inc. takes ownership of Pewabic. The Society begins work to restore the building and revitalize Pewabic&apos;s design and fabrication program.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-badge">
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	            </div>
+	            <div class="timeline-body">
+	              <p>The Society also broadens Pewabic&apos;s mission to include education, the creation of a museum and archive and exhibition programs.</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge success"><i class="glyphicon glyphicon-map-marker"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">1991</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>The building and its contents are designated a National Historic Landmark. Today, Pewabic is Michigan&apos;s only historic pottery.</p>
+	            </div>
+	          </div>
+	        </li>
+
+
+	    </ul>
+</div>
+
+
+	<footer>
+		<div id="newsletter" class="col-lg-s"></div>
+		<div id="contact"></div>
+	</footer>
+
+</body>
