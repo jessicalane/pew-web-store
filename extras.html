@@ -112,12 +112,21 @@
 						</ul>
 					</li>
 					<li>
-						<a href="/site/about-us" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+							<a href="/site/about-us" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
 							<ul class="dropdown-menu multi-level">
 								<li>
-									<a href="/our-history.html">Our History</a>
+									<a href="/site/our-history.html">Our History</a>
 								</li>
-					</li>
+								<li>
+									<a href="/site/contact-us.html">Contact Us</a>
+								</li>
+								<li>
+									<a href="/site/visit-us.html">Visit Us</a>
+								</li>
+								<li>
+									<a href="/site/policies.html">Policies</a>
+								</li>
+						</li>
 				</ul>
 			</div>
 		</div>
@@ -273,6 +282,22 @@
 <table style="margin: auto;">
 	<%=getCurrentAttribute('item', 'relateditemshtml')%>
 </table>
+
+<!--Sub SubCategory Cell Template-->
+<!--function: mainly mobile, will display subcategories-->
+<div class="col-lg-4 col-md-4 col-sm-6">
+	<div class="cat-items">
+		<div class="cat-img">
+			<a href="<%=getCurrentAttribute('sitecategory', 'urlcomponent')%>">
+				<img class="thumbnail-img" src="<%=getCurrentAttribute('sitecategory', 'storedisplaythumbnail')%>" />
+			</a>
+		</div>
+		<div>
+			<a href='<%=getCurrentAttribute('sitecategory','urlcomponent')%>'><%=getCurrentAttribute('sitecategory','itemID')%></a>
+		</div>
+	</div>
+</div>
+
 
 
 
