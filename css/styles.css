@@ -42,6 +42,18 @@
         font-size: 50px!important;
     }
 
+    #contact-form input {
+        width: 100%!important;
+    }
+
+    #contact-form textarea {
+        width: 100%!important;
+    }
+
+    #contact-form fieldset {
+        text-align: left!important;
+    }
+
 }
 
 nav ul {
@@ -135,6 +147,10 @@ nav ul li {
 .cart {
     height: 50px;
     background-color: rgba(50, 50, 50, 0.1)
+}
+
+.navbar-collapse {
+    max-height: none!important;
 }
 
 
@@ -541,6 +557,22 @@ td:nth-child(2) {
 
 #contact-form label {
     margin-right: 5px;
+}
+
+/*Policies Page*/
+
+.policies {
+    margin-top: 100px;
+}
+
+.policies section {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.policies p {
+    text-align: justify;
+    margin-left: 25px;
 }
 
 
