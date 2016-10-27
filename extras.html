@@ -115,6 +115,17 @@
 						</ul>
 					</li>
 					<li>
+						<a href="/support-us" class="dropdown-toggle" data-toggle="dropdown">Support Us<b class="caret"></b></a>
+						<ul class="dropdown-menu multi-level">
+							<li>
+								<a href="<%=getAttribute('sitecategory', 4072, 'urlcomponent')%>"><%=getAttribute('sitecategory', 4072, 'pagetitle')%></a>
+							</li>
+							<li>
+								<a href="<%=getAttribute('sitecategory', 4073, 'urlcomponent')%>"><%=getAttribute('sitecategory', 4073, 'pagetitle')%></a>
+							</li>
+						</ul>
+					</li>
+					<li>
 							<a href="/site/about-us" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
 							<ul class="dropdown-menu multi-level">
 								<li>
@@ -295,6 +306,16 @@
 				<img class="thumbnail-img" src="<%=getCurrentAttribute('sitecategory', 'storedisplaythumbnail')%>" />
 			</a>
 		</div>
+		<div>
+			<a href='<%=getCurrentAttribute('sitecategory','urlcomponent')%>'><%=getCurrentAttribute('sitecategory','itemID')%></a>
+		</div>
+	</div>
+</div>
+
+<!--Memberships Cell Template-->
+<!--function: memebership specific cells-->
+<div class="col-lg-4 col-md-4 col-sm-6">
+	<div class="cat-items">
 		<div>
 			<a href='<%=getCurrentAttribute('sitecategory','urlcomponent')%>'><%=getCurrentAttribute('sitecategory','itemID')%></a>
 		</div>
