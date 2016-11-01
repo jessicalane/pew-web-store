@@ -277,6 +277,7 @@ hr {
 
 img.thumbnail-img {
     max-width: 300px;
+    max-height: 300px;
 }
 
 /*These !important below account for user input error on item record.*/
