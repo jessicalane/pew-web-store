@@ -174,9 +174,10 @@
 			</a>
 		</div>
 		<div>
-			<h3 class="cat-display-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h3>
-			<p class="cat-options"><%=getCurrentAttribute('item', 'custitemoptionsavailable')%></p>
-			<!-- <p class="cat-quick-description"><%=getCurrentAttribute('item', 'storedescription')%></p> -->
+			<a href="<%=getCurrentAttribute('item', 'urlcomponent')%>">
+				<h3 class="cat-display-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h3>
+				<p class="cat-options"><%=getCurrentAttribute('item', 'custitemoptionsavailable')%></p>
+			</a>
 		</div>
 	</div>
 	<div>
@@ -321,6 +322,29 @@
 		</div>
 	</div>
 </div>
+
+<!--Information Item Drilldown Template-->
+<td class="container">
+	<div class="row">
+		<div class="col-lg-1 col-md-1 hidden-xs"></div>
+		<div class="col-lg-10 col-md-10 col-xs-12">
+			<div class="item-img-container">
+				<img id="item-img" src="<%=getCurrentAttribute('item', 'storedisplayimage')%>" />
+			</div>
+			<div class="item-details">
+				<h1 id="item-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h1>
+				<p id="item-price"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
+				<p id="item-dimensions"><%=getCurrentAttribute('item', 'custitem_pewabic_item_size')%></p>
+				<p>Unavailable for online purchase.</p>
+				<p id="item-description"><%=getCurrentAttribute('item', 'storedetaileddescription')%></p>
+			</div>
+		</div>
+		<div class="col-lg-1 col-md-1 hidden-xs"></div>
+	</div>
+</td>
+<table style="margin: auto;">
+	<%=getCurrentAttribute('item', 'relateditemshtml')%>
+</table>
 
 
 
