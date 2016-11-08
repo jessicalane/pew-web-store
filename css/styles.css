@@ -253,6 +253,16 @@ nav ul li {
     float: right;
 }
 
+.cat-display a:link, .cat-display a:visited, .cat-display a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.cat-display a:hover {
+    color: black;
+    font-style: italic;
+}
+
 .cat-quick-description, .related-quick-description {
     font-size: 16px;
     margin: auto;
