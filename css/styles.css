@@ -601,13 +601,13 @@ td:nth-child(2) {
 
 /*Membership Specific Formatting*/
 
-.cat-items-membership-container a:link, .cat-display a:visited, .cat-display a:active {
+.cat-items-membership a:link, .cat-display a:visited, .cat-display a:active {
     text-decoration: none;
     color: black;
     font-size: 24px;
 }
 
-.cat-items-membership-container a:hover {
+.cat-items-membership a:hover {
     font-style: italic;
     color: black;
 }
