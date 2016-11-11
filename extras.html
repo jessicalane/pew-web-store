@@ -18,6 +18,7 @@
 <script src="/c.3772784/site/js/app.js" type="text/javascript"></script>
 
 <!--<CUSTOMNAVIGATION><CUSTOMNAVIGATION2>-->
+<!--this information is stored under "tags" in NS-->
 <nav>
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
@@ -266,6 +267,7 @@
 </div>
 
 <!--Pewabic Non-Matrix Item Drilldown Template-->
+<!--this code may be unnecessary with removal of options on Custom tab-->
 <td class="container">
 	<div class="row">
 		<div class="col-lg-1 col-md-1 hidden-xs"></div>
@@ -319,7 +321,7 @@
 <div class="col-lg-4 col-md-4 col-sm-6">
 	<div class="cat-items">
 		<div>
-			<a href='<%=getCurrentAttribute('sitecategory','urlcomponent')%>'><%=getCurrentAttribute('sitecategory','itemID')%></a>
+			<a href='<%=getCurrentAttribute('item','urlcomponent')%>'><%=getCurrentAttribute('item','storedisplayname')%></a>
 		</div>
 	</div>
 </div>
