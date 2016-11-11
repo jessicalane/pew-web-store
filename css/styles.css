@@ -33,6 +33,10 @@
         margin: 25px 0px;
     }
 
+    p#back-to-category {
+        margin: 25px 0px;
+    }
+
     .item-img-container {
         float: none!important;
         margin: 0px!important;
@@ -230,6 +234,10 @@ nav ul li {
     display: inline-block;
 }
 
+.related {
+    min-width: 213px;
+}
+
 /*Category Item List - Cell Template*/
 
 .cat-display-name, .related-display-name {
@@ -321,6 +329,11 @@ img#item-img {
     font-size: 20px;
     margin: 25px 45px;
     text-align: justify;
+}
+
+#back-to-category {
+    font-size: 20px;
+    margin: 25px 45px;
 }
 
 [id^="itemavail"] {
