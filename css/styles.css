@@ -599,6 +599,22 @@ td:nth-child(2) {
     margin-left: 25px;
 }
 
+/*Membership Specific Formatting*/
+
+.cat-items-membership-container a:link, .cat-display a:visited, .cat-display a:active {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.cat-items-membership-container a:hover {
+    font-style: italic;
+    color: black;
+}
+
+.cat-items-membership {
+    
+}
 
 
 
