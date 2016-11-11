@@ -316,13 +316,14 @@
 	</div>
 </div>
 
-<!--Memberships Cell Template-->
+<!--Memberships/Donations Cell Template-->
 <!--function: memebership specific cells-->
 <div class="col-lg-4 col-md-4 col-sm-6">
 	<div class="cat-items">
 		<div class="cat-items-membership">
 			<a href='<%=getCurrentAttribute('item','urlcomponent')%>'><%=getCurrentAttribute('item','storedisplayname')%></a>
 		</div>
+		<p class="cat-price"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
 	</div>
 </div>
 
