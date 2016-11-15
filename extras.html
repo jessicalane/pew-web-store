@@ -350,6 +350,23 @@
 	<%=getCurrentAttribute('item', 'relateditemshtml')%>
 </table>
 
+<!--Support Us/Membership Category Item List Template-->
+<td>
+	<table id="category-item-list">
+		<tr>
+			<td>
+				<h1 id="category-title-heading"><%=getCurrentAttribute('sitecategory', 'itemid')%></h1>
+				<div id="support-us-description"><%=getCurrentAttribute('sitecategory', 'storedetaileddescription')%></div>
+			</td>
+		</tr>
+		<tr>
+			<div>
+				<NLITEMLIST>
+			</div>
+		</tr>
+	</table>
+</td>
+
 
 
 
