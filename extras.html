@@ -33,6 +33,7 @@
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
+					<li><CUSTOMSEARCHPORTLET></li>
 				    <li class="register"><NLUSERINFO2></li>
 				    <li class="cart"><a href="<%=getCartUrl()%>"><span class="glyphicon glyphicon-shopping-cart" style="margin-right: -20px;"></span></a></li>
 				    <li class="cart"><a href="<%=getCartUrl()%>"><p id="cart-total"><%=getCartTotal()%></p></a></li>
@@ -367,6 +368,32 @@
 		</tr>
 	</table>
 </td>
+
+<!--Membership Drilldown Template-->
+<td class="container">
+	<div class="row">
+		<div class="col-lg-1 col-md-1 hidden-xs"></div>
+		<div class="col-lg-10 col-md-10 col-xs-12">
+			<div class="item-details">
+				<h1 id="item-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h1>
+				<p id="item-price-membership"><%=getCurrentAttribute('item', 'salespricehtml')%></p>
+				<div class="item-cart-membership"><table><%=getCurrentAttribute('item', 'stockstatusmessagehtml')%><%=getCurrentAttribute('item','addToCartHTML')%></table></div>
+				<div id="item-description"><%=getCurrentAttribute('item', 'storedetaileddescription')%></div>
+				<p id="back-to-category">Back to <a href="<%=getCurrentAttribute('sitecategory', 'urlcomponent')%>"><%=getCurrentAttribute('sitecategory', 'pagetitle')%></a> </p>
+			</div>
+		</div>
+		<div class="col-lg-1 col-md-1 hidden-xs"></div>
+	</div>
+</td>
+<div style="margin: auto;">
+	<%=getCurrentAttribute('item', 'relateditemshtml')%>
+</table>
+
+<!--Custom Global Search Portlet-->
+<form method="post" name="searchportlettag" id="searchportlettag" onsubmit="window.location.href='/browse-store?sc=&category=&search='+escape(document.forms['searchportlettag'].elements['search'].value);return false">
+	<input type="text" name="search" maxlength="50" size="15" placeholder="Search" value>
+	<input type="button" style value="Go" id="go" name="go" onclick="window.location.href='/browse-store?sc=&category=&search='+escape(document.forms['searchportlettag'].elements['search'].value);return false; return false;">
+</form>
 
 
 
