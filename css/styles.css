@@ -191,6 +191,7 @@ nav ul li {
 
 #searchportlettag {
     padding-top: 12px;
+    margin-bottom: 0px;
 }
 
 
@@ -346,6 +347,7 @@ img.thumbnail-img {
     text-align: center;
     float: left;
     margin: 0px 45px 20px;
+    height: 300px;
 }
 
 img#item-img {

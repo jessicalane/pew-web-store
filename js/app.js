@@ -60,6 +60,26 @@
 
 	loginStyle();
 
+//Centering Images on Drilldown Template
 
+	function centerImageDrilldown() {
+		var imgHeight = $('#item-img').height();
+		var marginVariance = (300 - imgHeight) / 2;
+
+		if(imgHeight < 300) {
+			$('#item-img').css('margin-top', marginVariance);
+		}
+		
+	}
+
+	centerImageDrilldown();
+
+//Remove NetSuite unnecessary stylesheet
+
+	function removeStylesheet() {
+		$('link[rel=stylesheet][href="http://store.pewabic.co/core/styles/pagestyles.nl?ct=72&bglt=E9E9F1&bgmd=A7A7BE&bgdk=6F6F80&bgon=414181&bgoff=B6B6CE&bgbar=C6C6D7&tasktitletext=000000&crumbtext=000000&headertext=000000&ontab=FFFFFF&offtab=000000&text=000000&link=000000&bgbody=FFFFFF&bghead=FFFFFF&portlet=C6C6D7&portletlabel=000000&bgbutton=D2D2C8&bgrequiredfld=FFFFE5&font=Arial%2CHelvetica%2Csans-serif&size_site_content=9pt&size_site_title=9pt&size=1.0&nlinputstyles=T&accessibility=F&NS_VER=2016.2.0"]').remove();
+	}
+
+	removeStylesheet();
 
 });
