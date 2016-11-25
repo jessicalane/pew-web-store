@@ -177,7 +177,7 @@ nav ul li {
 #logo {
     max-width: 50px;
     height: auto;
-    margin: 0px 5px;
+    margin: 5px;
 }
 
 .cart {
@@ -400,11 +400,19 @@ img.related-thumbnail-img {
 /*Footer*/
 
 footer {
-    display: inline-block;
-    background-color: #716E6E;
+    background-color: #E1E2E0;
+    margin-top: 50px;
 }
 
-#newsletter {
+#newsletter-signup-name {
+}
+
+#newsletter, #copyright {
+    padding: 20px 0px 40px 10px;
+}
+
+#copyright {
+    text-align: right;
 }
 
 /*To Fix NetSuite issue*/
@@ -693,6 +701,13 @@ td:nth-child(2) {
 #shopping-cart {
     width: 90%;
     margin: 75px auto auto auto;
+}
+
+/*Search Results Styling*/
+
+.search-results {
+    text-align: center;
+    font-size: 32px;
 }
 
 

@@ -82,4 +82,11 @@
 
 	removeStylesheet();
 
+//Styling for 'No Results Found'
+	function noResultsStyle() {
+		$('p:contains("No items found.")').addClass("search-results");
+	}
+
+	noResultsStyle();
+
 });
