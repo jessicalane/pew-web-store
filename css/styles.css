@@ -2,8 +2,30 @@
     font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
 #div__body {
     margin-top: 75px !important;
+}
+
+#div__footer {
+    margin-top: 50px;
 }
 
 /*Menu Navigation*/
@@ -401,18 +423,34 @@ img.related-thumbnail-img {
 
 footer {
     background-color: #E1E2E0;
-    margin-top: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
 }
 
 #newsletter-signup-name {
 }
 
 #newsletter, #copyright {
-    padding: 20px 0px 40px 10px;
+    padding: 20px 0px 10px 10px;
 }
 
 #copyright {
     text-align: right;
+}
+
+#newsletter-button {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+@media (max-width: 1115px) {
+    #copyright {
+        text-align: left;
+    }
 }
 
 /*To Fix NetSuite issue*/
