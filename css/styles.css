@@ -448,11 +448,6 @@ footer {
     font-style: italic;
 }
 
-@media (max-width: 1115px) {
-    #copyright {
-        text-align: left;
-    }
-}
 
 /*To Fix NetSuite issue*/
 td:nth-child(2) {
