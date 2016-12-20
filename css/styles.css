@@ -373,7 +373,7 @@ img.thumbnail-img {
 }
 
 img#item-img {
-    max-width: 100%;
+    max-width: 300px;
 }
 
 #item-name {
@@ -396,9 +396,10 @@ img#item-img {
     margin: 25px 45px;
     padding: 7px;
     display: inline-block;
-    clear: right;
+    clear: both;
     background-color: lightgray;
     font-style: italic;
+    float: left;
 }
 
 #back-to-category > a {

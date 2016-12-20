@@ -20,7 +20,7 @@
 			$('.final').hide();
 			$('.secondlayer').addClass('disabled');
 		} else {
-			console.log("working");
+			console.log("mobileConfig working");
 		};
 	}
 
@@ -73,6 +73,7 @@
 	}
 
 	centerImageDrilldown();
+
 
 //Remove NetSuite unnecessary stylesheet
 
