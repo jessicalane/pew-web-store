@@ -90,4 +90,15 @@
 
 	noResultsStyle();
 
+//Removing Menu from Cart
+
+	function cartMenu() {
+		if (window.location.href.indexOf("checkout") > -1) {
+   			console.log("found it");
+   			$('#pewabic-navigation').css('display', 'none');
+		}
+	}	
+
+	cartMenu()
+
 });
