@@ -20,7 +20,7 @@ body {
   min-height: 100%;
 }
 
-#div__body {
+#div__body, .history-container {
     margin-top: 75px !important;
 }
 
@@ -196,7 +196,7 @@ nav ul li {
     background: transparent;
 }
 
-.history-container, .contact-container {
+.history-container, .contact-container, .visit-container {
     margin-bottom: 100px;
 }
 
@@ -285,7 +285,7 @@ nav ul li {
 #category-title-heading {
     margin-bottom: 30px;
     font-size: 90px;
-    margin-left: 25px;
+/*    margin-left: 25px;*/
 }
 
 .cat-price-size, .related-price-size {
@@ -676,10 +676,25 @@ td:nth-child(2) {
     margin-right: 5px;
 }
 
+/*Visit Us Page*/
+.visit-map {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.visit-subheaders {
+    font-style: italic;
+}
+
+strong {
+    font-style: italic;
+}
+
 /*Policies Page*/
 
 .policies {
-    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .policies section {
