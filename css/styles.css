@@ -220,6 +220,28 @@ nav ul li {
     margin-bottom: 0px;
 }
 
+#checkout-pewabic-navigation {
+    display: none;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+#checkout-pewabic-navigation h2 {
+    font-size: 18px;
+    margin-left: 25px;
+    color: gray;
+}
+
+#checkout-pewabic-navigation a {
+    text-decoration: none;
+    color: gray;
+}
+
+#checkout-pewabic-navigation a:hover {
+    font-style: italic;
+}
+
 
 /*Lifestyle Carousel*/
 
@@ -757,7 +779,7 @@ strong {
 }
 
 #main {
-    margin: 75px 25px 25px 75px;
+    margin: 0px 25px 25px 75px;
 }
 
 /*Search Results Styling*/

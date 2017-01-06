@@ -96,6 +96,7 @@
 		if (window.location.href.indexOf("checkout") > -1) {
    			$('#pewabic-navigation').css('display', 'none');
    			$('link[rel=stylesheet][href="https://checkout.na2.netsuite.com/c.3772784/site/css/bootstrap.css"]').remove();
+   			$('#checkout-pewabic-navigation').css('display', 'inline-block');
 		}
 	}	
 
