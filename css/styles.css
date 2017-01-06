@@ -756,6 +756,10 @@ strong {
     margin: 75px auto auto auto;
 }
 
+#main {
+    margin: 75px 25px 25px 75px;
+}
+
 /*Search Results Styling*/
 
 .search-results {

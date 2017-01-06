@@ -94,11 +94,11 @@
 
 	function cartMenu() {
 		if (window.location.href.indexOf("checkout") > -1) {
-   			console.log("found it");
    			$('#pewabic-navigation').css('display', 'none');
+   			$('link[rel=stylesheet][href="https://checkout.na2.netsuite.com/c.3772784/site/css/bootstrap.css"]').remove();
 		}
 	}	
 
-	cartMenu()
+	cartMenu();
 
 });
