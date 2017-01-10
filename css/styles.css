@@ -72,6 +72,10 @@ body {
         width: 100%!important;
     }
 
+    input#newsletter-signup-name, input#newsletter-signup-email {
+        width: 90%!important;
+    }
+
     #contact-form textarea {
         width: 100%!important;
     }
@@ -782,11 +786,15 @@ strong {
     margin: 0px 25px 25px 75px;
 }
 
-/*Search Results Styling*/
+/*Search Results & Contact Us Results Styling*/
 
-.search-results {
+.search-results, .contact-thank-you {
     text-align: center;
     font-size: 32px;
+}
+
+.contact-thank-you-container {
+    margin-top: 100px;
 }
 
 
