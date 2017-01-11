@@ -797,6 +797,10 @@ strong {
     margin: 0px 25px 25px 75px;
 }
 
+.stock-status {
+    margin-bottom: 5px;
+}
+
 /*Search Results & Contact Us Results Styling*/
 
 .search-results, .contact-thank-you {
