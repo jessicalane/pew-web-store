@@ -444,6 +444,7 @@ img#item-img {
 
 img.related-thumbnail-img {
     width: 175px;
+    max-height: 175px;
 }
 
 .related-img {
