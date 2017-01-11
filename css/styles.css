@@ -49,6 +49,7 @@ body {
 
     img#item-img {
         max-width: 300px;
+        max-height: 300px;
     }
 
     p#item-description {
@@ -116,6 +117,10 @@ nav ul {
 
 nav ul li {
 	display: block;
+}
+
+a.dropdown-toggle.secondlayer {
+    cursor: default;
 }
 
 .register a {
@@ -404,6 +409,7 @@ img.thumbnail-img {
 
 img#item-img {
     max-width: 300px;
+    max-height: 300px;
 }
 
 #item-name {
@@ -443,7 +449,7 @@ img#item-img {
 /*Related Items on Drilldown*/
 
 img.related-thumbnail-img {
-    width: 175px;
+    max-width: 175px;
     max-height: 175px;
 }
 
