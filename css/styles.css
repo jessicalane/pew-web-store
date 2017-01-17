@@ -86,7 +86,7 @@ body {
     }
 
     #main {
-        margin: 0px 25px 25px 5px!important;
+        margin: 0px 5px 25px 5px!important;
     }
 
 }
@@ -121,6 +121,10 @@ nav ul {
 
 nav ul li {
 	display: block;
+}
+
+.firstlayer {
+    font-style: italic;
 }
 
 a.dropdown-toggle.secondlayer {
@@ -319,8 +323,9 @@ a.dropdown-toggle.secondlayer {
 
 #category-title-heading {
     margin-bottom: 30px;
-    font-size: 90px;
-/*    margin-left: 25px;*/
+    font-size: 55px;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 .cat-price-size, .related-price-size {
@@ -797,6 +802,15 @@ strong {
     margin: 0px 25px 25px 75px;
 }
 
+#main .name a {
+    font-size: 18px;
+    color: black!important;
+}
+
+#main .lead-price {
+    color: black!important;
+}
+
 .stock-status {
     margin-bottom: 5px;
 }
@@ -810,6 +824,19 @@ strong {
 
 .contact-thank-you-container {
     margin-top: 100px;
+}
+
+ul.breadcrumb.hidden-phone, .wizard-step-groups {
+    display: none!important;
+}
+
+#main .btn-primary {
+    background-color: #51899A!important;
+    background-image: -moz-linear-gradient(top,#51899a,#51899a)!important;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#51899A),to(#51899A))!important;
+    background-image: -webkit-linear-gradient(top,#51899A,#51899A)!important;
+    background-image: -o-linear-gradient(top,#51899A,#51899A)!important;
+    background-image: linear-gradient(to bottom,#51899A,#51899A)!important;
 }
 
 
