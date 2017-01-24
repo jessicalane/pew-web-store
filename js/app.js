@@ -1,18 +1,18 @@
  $(document).ready(function() {
 
 // Mobile navigation functions for scrolling/clicking
-	function mobileNav() {
+	// function mobileNav() {
 
-		// $(document).on('click', function() {
-		// 	$('.collapse').collapse('hide');
-		// });
+	// 	// $(document).on('click', function() {
+	// 	// 	$('.collapse').collapse('hide');
+	// 	// });
 
-		$(document).on('scroll', function() {
-			$('.collapse').collapse('hide');
-		});
-	}
+	// 	$(document).on('scroll', function() {
+	// 		$('.collapse').collapse('hide');
+	// 	});
+	// }
 
-	mobileNav();
+	// mobileNav();
 
 //Menu config for mobile
 	function mobileConfig() {
@@ -55,7 +55,7 @@
 //Register Login Styling Override
 	function loginStyle() {
 		$('a:contains("Register")').addClass("register-link");
-		$('a:contains("Log")').addClass("login-link");
+		$('.smalltext:contains("Log")').addClass("login-link");
 	}
 
 	loginStyle();

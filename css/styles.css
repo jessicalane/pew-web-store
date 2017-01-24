@@ -434,6 +434,7 @@ img#item-img {
     font-size: 20px;
     margin: 25px 45px;
     text-align: justify;
+    clear: left;
 }
 
 #back-to-category {
@@ -832,13 +833,16 @@ ul.breadcrumb.hidden-phone, .wizard-step-groups {
 
 #main .btn-primary {
     background-color: #51899A!important;
-    background-image: -moz-linear-gradient(top,#51899a,#51899a)!important;
-    background-image: -webkit-gradient(linear,0 0,0 100%,from(#51899A),to(#51899A))!important;
-    background-image: -webkit-linear-gradient(top,#51899A,#51899A)!important;
-    background-image: -o-linear-gradient(top,#51899A,#51899A)!important;
-    background-image: linear-gradient(to bottom,#51899A,#51899A)!important;
+    background-image: -moz-linear-gradient(top,#51899a,#487B8A)!important;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#51899A),to(##487B8A))!important;
+    background-image: -webkit-linear-gradient(top,#51899A,##487B8A)!important;
+    background-image: -o-linear-gradient(top,#51899A,#487B8A)!important;
+    background-image: linear-gradient(to bottom,#51899A,#487B8A)!important;
 }
 
+#main .btn-primary {
+    background-position: 0 0px!important;
+}
 
 
 
