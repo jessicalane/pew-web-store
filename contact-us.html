@@ -53,16 +53,17 @@
 				<input type="text" name="subject" class="input" value="Pewabic Inquiry">
 			</fieldset>
 			<fieldset>
-				<label for "message">Message: </label>
-				<textarea rows="10" wrap="VIRTUAL" name="message"></textarea>
+				<label for "shoppermessage">Message: </label>
+				<textarea rows="10" wrap="VIRTUAL" name="shoppermessage"></textarea>
 			</fieldset>
 			<fieldset>
-				<input type="submit" class="bgbutton" value="Submit" id="submitter" name="submitter" onclick="return(document.forms['info'].action='/app/site/backend/customeremail.nl', checkemail(document.forms['info'].elements['shopperemail'].value, false, true));">
+				<input type="submit" class="bgbutton" value="Submit" id="submitter" name="submitter" onclick="document.forms['info'].elements['message'].value = '<b>Customer Name: </b>'  + document.forms['info'].elements['shoppername'].value + '<br><br>' + document.forms['info'].elements['shoppermessage'].value; return(document.forms['info'].action='/app/site/backend/customeremail.nl', checkemail(document.forms['info'].elements['shopperemail'].value, false, true));">
 			</fieldset>
 		</div>
 
 		<input type='hidden' name='storeemail' value='jlane@pewabic.org'>
 		<input type='hidden' name='seq' value='4'>
+		<input type='hidden' name='message' value=''>
 		<input type='hidden' name='h' value='ae349ce34c0cd5123c48d04c5764c7897fe1cc'>
 		<input type='hidden' name='redirect' value='/contact-us.html'>
 
