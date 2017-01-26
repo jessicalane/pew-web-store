@@ -150,7 +150,7 @@
 </nav>
 <nav id="checkout-pewabic-navigation">
 	<h2>
-		<a href="http://pewabicstore.org">&larr; BACK TO SHOPPING</a>
+		<a href="/">&larr; BACK TO SHOPPING</a>
 	</h2>
 </nav>
 
@@ -204,7 +204,7 @@
 		<div class="col-lg-1 col-md-1 hidden-xs"></div>
 		<div class="col-lg-10 col-md-10 col-xs-12">
 			<div class="item-img-container">
-				<img id="item-img" src="<%=getCurrentAttribute('item', 'storedisplayimage')%>" />
+				<img id="item-img" src="<%=getCurrentAttribute('item', 'storedisplayimage')%>" data-lightbox="image-1" />
 			</div>
 			<div class="item-details">
 				<h1 id="item-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h1>
@@ -220,6 +220,7 @@
 					$(document).ready(function() {
 						$('#custcolglazes, #custcolttone, #custcolmlt, #custcolird').change(function() {
 							$('#item-img')[0].src = "http://store.pewabic.co/"+ glazes + this.value + ".jpg"
+							$('a[data-lightbox=image-1]')[0].href = "http://store.pewabic.co/"+ glazes + this.value + ".jpg";
 						});
 					});
 					
