@@ -19,9 +19,7 @@
 		if ($(document).width() <= 1000) {
 			$('.final').hide();
 			$('.secondlayer').addClass('disabled');
-		} else {
-			console.log("mobileConfig working");
-		};
+		} 
 	}
 
 	mobileConfig();
