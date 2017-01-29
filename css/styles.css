@@ -840,6 +840,16 @@ ul.breadcrumb.hidden-phone, .wizard-step-groups {
     background-position: 0 0px!important;
 }
 
+/*Extra Tag/Misc Styling*/
+
+#class-disclaimer-header {
+    font-weight: 600;
+}
+
+#class-disclaimer-notice {
+    font-style: italic;
+}
+
 
 
 
