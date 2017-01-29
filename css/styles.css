@@ -127,10 +127,6 @@ nav ul li {
     font-style: italic;
 }
 
-a.dropdown-toggle.secondlayer {
-    cursor: default;
-}
-
 .register a {
     display: inline-block!important;
 }
