@@ -814,13 +814,21 @@ strong {
 
 /*Search Results & Contact Us Results Styling*/
 
-.search-results, .contact-thank-you {
+.search-results, .contact-thank-you, .error-page {
     text-align: center;
     font-size: 32px;
 }
 
-.contact-thank-you-container {
+.contact-thank-you-container, .error-page-container {
     margin-top: 100px;
+}
+
+.error-page-container {
+    text-align: center;
+}
+
+#error-page-header {
+    font-size: 55px;
 }
 
 ul.breadcrumb.hidden-phone, .wizard-step-groups {
