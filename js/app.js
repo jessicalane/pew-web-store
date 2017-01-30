@@ -30,7 +30,7 @@
 			return $(this).height();
 		}).get();
 
-		var maxHeight = Math.max.apply(null, elementHeights);
+		var maxHeight = (Math.max.apply(null, elementHeights)) + 10;
 
 		$('.cat-items').height(maxHeight);
 	}
