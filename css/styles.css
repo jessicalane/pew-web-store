@@ -292,22 +292,21 @@ nav ul li {
     font-size: 60px;
 }
 
-.featureditem img {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.displayname {
-    font-size: 2vw;
-    clear: none;
-    color: #000;
-    font-style: italic;
-}
-
 #homepagefeatured {
     margin: 0 auto 200px auto;
+}
+
+.featureditem img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.featureditem {
+    text-align: center;
+}
+
+.featured-image {
+    height: 200px;
 }
 
 /*Category Item List*/
@@ -380,6 +379,7 @@ nav ul li {
 .cat-options, .related-options {
     font-style: italic;
     font-size: 12px;
+    text-align: center;
 }
 
 .cat-items, .related-items {
