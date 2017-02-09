@@ -60,17 +60,17 @@
 
 //Centering Images on Drilldown Template
 
-	function centerImageDrilldown() {
-		var imgHeight = $('#item-img').height();
-		var marginVariance = (300 - imgHeight) / 2;
+	// function centerImageDrilldown() {
+	// 	var imgHeight = $('#item-img').height();
+	// 	var marginVariance = (300 - imgHeight) / 2;
 
-		if(imgHeight < 300) {
-			$('#item-img').css('margin-top', marginVariance);
-		}
+	// 	if(imgHeight < 300) {
+	// 		$('#item-img').css('margin-top', marginVariance);
+	// 	}
 		
-	}
+	// }
 
-	centerImageDrilldown();
+	// centerImageDrilldown();
 
 
 //Remove NetSuite unnecessary stylesheet
