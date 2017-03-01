@@ -311,10 +311,17 @@ nav ul li {
 
 #featured-container {
     padding: 10px;
+    font-size: 22px;
 }
 
 #featured-container a {
     color: #51899A;
+}
+
+.featured-display .displayname {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
 }
 
 /*Category Item List*/
