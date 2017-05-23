@@ -364,6 +364,7 @@ nav ul li {
 .cat-img {
     text-align: center;
     height: 300px;
+    position: relative;
 }
 
 .cat-price, .related-price {
@@ -400,6 +401,13 @@ nav ul li {
 .cat-items, .related-items {
     text-align: center;
     margin-top: 25px;
+}
+
+a.cat-item-link {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 hr {
