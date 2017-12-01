@@ -21,7 +21,7 @@ body {
 }
 
 #div__body, .history-container {
-    margin-top: 75px !important;
+    margin-top: 100px !important;
 }
 
 #div__footer {
@@ -191,6 +191,7 @@ nav ul li {
 	background: rgba(255,255,255,0.9);
 	border-bottom: 0px;
     font-weight: 600;
+    margin-top: 45px;
 }
 
 .caret-up {
@@ -277,6 +278,7 @@ nav ul li {
 
 #lifestylecarousel {
     text-align: center;
+    margin-top: 45px;
 }
 
 .item {
@@ -324,6 +326,20 @@ nav ul li {
     margin-top: 5px;
 }
 
+.promo-banner {
+    height: 45px;
+    background-color: #4f2526;
+    color: white;
+}
+
+#promo-text {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+    font-style: italic;
+    font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+}
+
 /*Category Item List*/
 
 #category-item-list {
@@ -350,6 +366,8 @@ nav ul li {
 .related {
     min-width: 213px;
 }
+
+
 
 /*Category Item List - Cell Template*/
 
