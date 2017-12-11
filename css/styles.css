@@ -787,6 +787,12 @@ strong {
     margin-left: 25px;
 }
 
+/*Shipping Policies Page*/
+
+#shipping-map {
+    max-width: 100%;
+}
+
 /*Retail Locations Page*/
 
 #retail-locations-list li {
