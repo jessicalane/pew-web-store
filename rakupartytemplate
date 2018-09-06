@@ -1,0 +1,41 @@
+<td class="container">
+	<div class="row">
+		<div class="col-lg-10 col-lg-offset-1">
+			<div class="item-details">
+				<h1 id="item-name"><%=getCurrentAttribute('item', 'storedisplayname')%></h1>
+				
+				<div class="item-cart-membership"><table><%=getCurrentAttribute('item', 'stockstatusmessagehtml')%><%=getCurrentAttribute('item','addToCartHTML')%></table></div>
+				<div id="item-description"><%=getCurrentAttribute('item', 'storedetaileddescription')%></div>
+				<p id="back-to-category">Back to <a href="<%=getCurrentAttribute('sitecategory', 'canonicalurl')%>"><%=getCurrentAttribute('sitecategory', 'pagetitle')%></a> </p>
+				<script type="text/javascript">
+
+					//Overrides NS code that makes quantity box hidden on variable amount items.
+					$('#qty').attr('type', 'input'); 
+
+
+					$('#amount').keyup(function() {
+						var inputamount = $(this).val();
+
+						// $('#amount').attr('value', inputamount);
+
+
+						// checks if entered variable amount is equal to or greater than $65
+						if (inputamount < 65) {
+							$('#addtocart').attr('value', 'Minimum donation amount is $65.00');
+							$('#addtocart').attr('disabled', 'disabled');
+						} else {
+							$('#addtocart').attr('value', 'Add to Cart');
+							$('#addtocart').removeAttr('disabled', 'disabled');
+						};
+					});
+
+
+				</script>
+			</div>
+		</div>
+	</div>
+</td>
+
+<table style="margin: auto;">
+	<%=getCurrentAttribute('item', 'relateditemshtml')%>
+</table>

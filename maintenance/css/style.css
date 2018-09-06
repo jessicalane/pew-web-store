@@ -1,0 +1,68 @@
+* {
+	font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+}
+
+body {
+	margin: 0px;
+}
+
+.container {
+	width: 100%;
+}
+
+#maintenance-details {
+	width: 80%;
+	margin: auto;
+}
+
+a {
+	color: #33CCCC;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 2vw;
+	white-space: nowrap;
+}
+
+h2 {
+
+}
+
+.date {
+	font-weight: normal;
+}
+
+@media only screen and (max-width: 768px) {
+	#pardon-our-dust {
+		width: 100%;
+		display: block;
+	}
+
+	#maintenance-info {
+		width: 100%;
+		display: block;
+	}
+
+	#pardon-our-dust-image {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	#pardon-our-dust {
+		width: 60%;
+		display: inline-block;
+		float: left;
+	}
+
+	#maintenance-info {
+		width: 40%;
+		display: inline-block;
+		float: left;
+	}
+
+	#pardon-our-dust-image {
+		width: 100%;
+	}
+}
