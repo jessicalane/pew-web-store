@@ -20,12 +20,29 @@ body {
   min-height: 100%;
 }
 
+
 #div__body, .history-container {
     margin-top: 100px !important;
 }
 
 #div__footer {
     margin-top: 200px;
+}
+
+/*The following code is only needed when announcement bar is active*/
+
+/* .navbar {
+    margin-top: 45px;
+} */
+
+.promo-banner {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#promo-banner-link {
+    color: white;
+    text-decoration: underline;
 }
 
 /*Menu Navigation*/
@@ -325,7 +342,7 @@ nav ul li {
     margin-top: 5px;
 }
 
-/*.promo-banner {
+.promo-banner {
     height: 45px;
     background-color: #6f2526;
     color: white;
@@ -337,7 +354,7 @@ nav ul li {
     line-height: 45px;
     font-style: italic;
     font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
-}*/
+}
 
 /*Category Item List*/
 
